@@ -10,7 +10,7 @@
 # possible, but leave them commented.  Uncommented options override the
 # default value.
 
-#Port 32123
+Port 32123
 #AddressFamily any
 #ListenAddress 0.0.0.0
 #ListenAddress ::
@@ -29,7 +29,7 @@
 # Authentication:
 
 #LoginGraceTime 2m
-#PermitRootLogin no
+PermitRootLogin no
 #StrictModes yes
 #MaxAuthTries 6
 #MaxSessions 10
@@ -114,3 +114,5 @@ Subsystem	sftp	/usr/lib/ssh/sftp-server
 #	AllowTcpForwarding no
 #	PermitTTY no
 #	ForceCommand cvs server
+
+AllowUsers opsstudent
